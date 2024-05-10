@@ -1,0 +1,337 @@
+.logo img {
+    width: 100px;
+    padding-left: 54px;
+    margin-top: 10px;
+    margin-right: 10px; /* Adjust this value as needed */
+}
+/* .topnav {
+    position: relative; /* Ensure the topnav stays at the top 
+    z-index: 1; /* Ensure the topnav stays above other elements 
+} */
+
+.but:hover{
+    background-color: burlywood; /* Change background color on hover */
+    border-color: burlywood; /* Change border color on hover */
+}
+.but{
+    position: absolute;
+    top: 95%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border: none;
+    color: white;
+    background-color: #DAA06D;
+    font-size: 24px;
+    cursor: pointer;
+    width: 150px; /* Adjust the width as needed */
+    height: 50px; /* Adjust the height as needed */
+    transition: background-color 0.3s, border-color 0.3s; /* Add transition for smooth effect */
+
+}
+
+.bullet-points ul li a {
+    color: black; /* Default color */
+    transition: color 0.3s; /* Smooth transition effect */
+    text-decoration: none;
+}
+
+.bullet-points ul li a:hover {
+    color: #DAA06D; /* Color on hover */
+}
+.background {
+    background-image: url('back.png'); /* Set the background image */
+    background-size: cover; /* Cover the entire viewport */
+    background-repeat: no-repeat; /* Prevent the background image from repeating */
+    height: 100vh; /* Set the height to cover the entire viewport */
+    background-position: center top; /* Move the background image to the center vertically and to the top horizontally */
+    margin-top: 90px;
+
+}
+
+.bullet-points ul li a.active {
+    color: #DAA06D;
+    font-weight: bold;
+}
+.title h3 {
+    font-family: "Questrial";
+    margin-bottom: 10px;
+    font-weight: normal;
+    margin-top: 3px; /* Adjust this value as needed */
+    padding-left: 8px;
+    font-size: 30px;
+}
+
+.bullet-points ul {
+    list-style-type: square;
+    padding-left: 350px;
+    margin-top: -80px; /* Adjust this value as needed */
+}
+
+li {
+    margin-right: 95px;
+    float: left;
+    text-align: right;
+    font-size: 28px;
+    font-family: "Poppins";
+    margin-bottom: 60px;
+    font-weight: normal;
+    transition: font-size 0.3s, text-shadow 0.3s; /* Add transition effect for font size and box-shadow */
+    position: relative;
+
+
+}
+.vertical-bullet-points li:hover {
+    font-size: 28.3px; /* Increase font size on hover */
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2); /* Add shadow effect on hover */
+
+}
+
+.about-us {
+    padding-left: 10px;
+    text-align: left;
+    margin-bottom: 30px;
+}
+
+
+
+.about-us h1 {
+    margin-left: 60%; /* Move the heading to the center */
+    transform: translateX(-50%); /* Center the heading horizontally */
+    margin-top: -75px; /* Adjust the top margin as needed */
+    opacity: 0; /* Initially set opacity to 0 */
+    transform: translateX(150%); /* Initially move the element to the right */
+    animation: slideInAboutUs 1s forwards; /* Apply animation for NOSOTROS */
+    font-size: 30px;
+}
+.imagenes img{
+    margin-right: 200px;
+   width: 170px;
+   height: auto;
+   margin: 120px; /* Add some margin between images */
+
+}
+
+.imagenes {
+    display: flex; /* Use flexbox for positioning */
+    justify-content: flex-end; /* Align items to the end (right) of the container */
+    margin-right: 10px; /* Adjust the right margin of the container as needed */
+    margin-top: -130px;
+}
+
+
+
+.valores {
+    padding-left: 420px;
+    margin-bottom: -90px; /* Adjust this value to create space for the images */
+    padding-top: -40px; /* Adjust this value to move the heading upwards */
+    animation: slideInValues 1s forwards, fadeIn 1s forwards;
+    font-size: 14px; /* Adjust the font size as needed */
+
+
+}
+
+
+/* For the first image */
+.compro-img {
+    
+    opacity: 0; /* Initially set opacity to 0 */
+    transform: translateY(-50px); /* Initially move the image up */
+    animation: slideInCompro 1s forwards, fadeIn 1s forwards; /* Apply animations */
+    position: relative; /* Set position to absolute */
+    right: 20px; /* Adjust the right distance as needed */
+
+}
+
+/* For the second image */
+.cali-img {
+    opacity: 0; /* Initially set opacity to 0 */
+    transform: translateY(-50px); /* Initially move the image up */
+    animation: slideInCali 1s forwards, fadeIn 1s forwards; /* Apply animations */
+    position: relative; /* Set position to absolute */
+    right: 20px; /* Adjust the right distance as needed */
+}
+
+/* For the third image */
+.inte-img {
+    opacity: 0; /* Initially set opacity to 0 */
+    transform: translateY(-50px); /* Initially move the image up */
+    position: relative; /* Set position to absolute */
+    animation: slideInInte 1s forwards, fadeIn 1s forwards; /* Apply animations */
+    right: 20px; /* Adjust the right distance as needed */
+
+}
+
+/* Animation for sliding in each image */
+@keyframes slideInCompro {
+    from {
+        opacity: 0; /* Start with opacity 0 */
+        transform: translateY(-50px); /* Start with the image moved up */
+    }
+    to {
+        opacity: 1; /* End with opacity 1 */
+        transform: translateY(0); /* End with the image at its original position */
+    }
+}
+
+@keyframes slideInCali {
+    from {
+        opacity: 0; /* Start with opacity 0 */
+        transform: translateY(-50px); /* Start with the image moved up */
+    }
+    to {
+        opacity: 1; /* End with opacity 1 */
+        transform: translateY(0); /* End with the image at its original position */
+    }
+}
+
+@keyframes slideInInte {
+    from {
+        opacity: 0; /* Start with opacity 0 */
+        transform: translateY(-50px); /* Start with the image moved up */
+    }
+    to {
+        opacity: 1; /* End with opacity 1 */
+        transform: translateY(0); /* End with the image at its original position */
+    }
+}
+
+/* Animation for fading in each image */
+@keyframes fadeIn {
+    from {
+        opacity: 0; /* Start with opacity 0 */
+    }
+    to {
+        opacity: 1; /* End with opacity 1 */
+    }
+}
+
+@keyframes slideInValues {
+    from {
+        margin-top: -100px; /* Start with the title above */
+    }
+    to {
+        margin-top: 10; /* Move the title to its original position */
+    }
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0; /* Start with opacity 0 */
+    }
+    to {
+        opacity: 1; /* End with opacity 1 */
+    }
+}
+.about-us p {
+    margin-left: 70%; /* Move the paragraph to the center */
+    transform: translateX(-50%); /* Center the paragraph horizontally */
+    margin-top: 30px; /* Adjust the top margin as needed */
+    font-size: 18px;
+    text-align: left;
+    max-width: 460px; /* Adjust the maximum width as needed */
+    word-wrap: break-word;
+
+}
+
+.vertical-bullet-points li {
+    margin-bottom: 27px;
+    clear: both;
+    font-size: 18px;
+    text-align: left;
+    padding-left: 50px;
+    position: relative; /* Position relative for absolute positioning of bullet point */
+
+
+
+}
+
+.services h1 {
+    margin-bottom: 27px;
+    padding-left: 50px;
+    margin-top: 50px;
+    opacity: 0; /* Initially set opacity to 0 */
+    transform: translateX(-100%); /* Initially move the element to the left */
+    animation: slideInServices 1s forwards; /* Apply animation for NUESTROS SERVICIOS */
+    font-size: 30px;
+
+}
+
+@keyframes slideInServices {
+    from {
+        opacity: 0; /* Start with opacity 0 */
+        transform: translateX(-100%); /* Start from the left */
+    }
+    to {
+        opacity: 1; /* End with opacity 1 */
+        transform: translateX(0); /* Move to original position */
+    }
+}
+
+@keyframes slideInAboutUs {
+    from {
+        opacity: 0; /* Start with opacity 0 */
+        transform: translateX(100%); /* Start from the right */
+    }
+    to {
+        opacity: 1; /* End with opacity 1 */
+        transform: translateX(0); /* Move to original position */
+    }
+}
+
+
+
+@media only screen and (max-width: 600px) {
+    .bullet-points ul {
+        padding-left: 5%; /* Adjust this value for smaller screens */
+    }
+    .bullet-points ul li {
+        margin-right: 0; /* Remove right margin for list items */
+        text-align: left; /* Align list items to the left */
+        font-size: 20px; /* Adjust font size for smaller screens */
+        margin-bottom: 30px; /* Adjust bottom margin for smaller screens */
+    }
+
+    .logo img {
+        width: 120px; /* Adjust width for button */
+        height: 40px; /* Adjust height for button */
+    }
+
+    .but {
+
+        width: 120px; /* Adjust width for button */
+        height: 40px; /* Adjust height for button */
+    }
+
+    .background {
+        margin-top: 70px; /* Adjust margin top for background */
+    }
+
+    .title h3 {
+        font-size: 24px; /* Adjust font size for smaller screens */
+    }
+
+    .about-us h1 {
+        margin-left: 50%; /* Adjust margin left for heading */
+        margin-top: -60px; /* Adjust margin top for heading */
+        font-size: 24px; /* Adjust font size for heading */
+    }
+
+    .about-us p {
+        margin-left: 50%; /* Adjust margin left for paragraph */
+        margin-top: 20px; /* Adjust margin top for paragraph */
+        font-size: 16px; /* Adjust font size for paragraph */
+        max-width: none; /* Remove maximum width for paragraph */
+    }
+
+    .services h1 {
+        padding-left: 10px; /* Adjust padding left for heading */
+        margin-top: 30px; /* Adjust margin top for heading */
+        font-size: 24px; /* Adjust font size for heading */
+    }
+
+    .vertical-bullet-points li {
+        font-size: 16px; /* Adjust font size for bullet points */
+        padding-left: 20px; /* Adjust padding left for bullet points */
+        margin-bottom: 20px; /* Adjust bottom margin for bullet points */
+    }
+}
